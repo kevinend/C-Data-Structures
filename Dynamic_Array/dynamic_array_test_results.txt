@@ -1,0 +1,63 @@
+-- Dynamic Array test results:
+
+(1)Baseline count and capacity
+darray1 count == 0, capacity == 8
+darray2 count == 0, capacity == 10
+
+(2)Testing out of bounds errors for darray_at_index()
+darray_at_index()...out of bounds exception
+darray_at_index()...out of bounds exception
+
+Elements using at_index: 
+darray1: 
+0 1 2 3 4 5 6 7 8 9 
+
+darray2: 
+Field1 == 10, Field2 == 11, Field3 == 12
+Field1 == 20, Field2 == 21, Field3 == 22
+Field1 == 30, Field2 == 31, Field3 == 32
+
+darray1 count == 10, capacity == 16
+darray2 count == 3, capacity == 10
+
+Elements using remove: 
+darray1: 
+9 8 7 6 5 4 3 2 1 0 
+
+darray2: 
+Field1 == 30, Field2 == 31, Field3 == 32
+Field1 == 20, Field2 == 21, Field3 == 22
+Field1 == 10, Field2 == 11, Field3 == 12
+
+darray1 count == 0, capacity == 16
+darray2 count == 0, capacity == 10
+
+(3)Failed shrink to size...test1 
+darray1 count == 5, capacity == 16
+darray2 count == 0, capacity == 10
+
+(4)Failed shrink to size...test2 
+darray1 count == 5, capacity == 16
+darray2 count == 0, capacity == 10
+
+(5)Successful shrink to size 
+darray1 count == 5, capacity == 8
+darray2 count == 0, capacity == 10
+
+(6)Successful shrink to fit 
+darray1 count == 5, capacity == 5
+darray2 count == 0, capacity == 10
+
+(7)Testing shrink_to_size for leaks: 
+darray1 count == 5, capacity == 5
+darray2 count == 10, capacity == 10
+
+(8)Testing shrink_to_fit for leaks: 
+darray1 count == 5, capacity == 5
+darray2 count == 5, capacity == 5
+
+(9)Testing unorderd_remove: 
+darray1 count == 5, capacity == 5
+darray2 count == 4, capacity == 5
+
+(10)Testing clear and the freeing functions: 
