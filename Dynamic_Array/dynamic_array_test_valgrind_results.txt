@@ -1,0 +1,11 @@
+valgring --leak-check=yes ./dynamic_array_test
+
+==10430== 
+==10430== HEAP SUMMARY:
+==10430==     in use at exit: 0 bytes in 0 blocks
+==10430==   total heap usage: 38 allocs, 38 frees, 1,856 bytes allocated
+==10430== 
+==10430== All heap blocks were freed -- no leaks are possible
+==10430== 
+==10430== For counts of detected and suppressed errors, rerun with: -v
+==10430== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
