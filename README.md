@@ -5,7 +5,7 @@ This repository contains sample generic containers/data structures implemented i
 All examples were compiled with gcc on linux (ubuntu) with the following flags:
   gcc -Wall -Werror -fno-common -std=c99 
  
-Included are valgrind outputs for a few of the data structures. I tried to test all the functionality included in each file and in sequences that would be prone to leaking memory (such as popping a stack then immediately pushing right after). This doesn't guarantee that the structures are leak-proof. I just wanted to ensure that they weren't leaking memory in obvious ways.
+Included are valgrind outputs for a few of the data structures. I tried to test all the functionality included in each file and in sequences that would be prone to leaking memory (such as popping a stack then immediately pushing right after). Testing doesn't guarantee that the structures are leak-proof, just that they aren't leaking memory in obvious ways.
 
-As always, the following code definitely contains bugs. 
+I am sure there are bugs in the following code...just par for the course.
 
