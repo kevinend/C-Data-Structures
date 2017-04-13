@@ -1,0 +1,64 @@
+I didn't use heap allocated data in this example, so there will be no corresponding valgrind output.
+The implementation would work with heap data, the user would just have to define a freeing function to clean up allocations.
+
+(1)Populating:
+HEAD == 0
+TAIL == 4
+COUNT == 4
+
+Field1 == 0, Field2 == 1, Field3 == 2
+Field1 == 1, Field2 == 2, Field3 == 3
+Field1 == 2, Field2 == 3, Field3 == 4
+Field1 == 3, Field2 == 4, Field3 == 5
+Field1 == 4, Field2 == 5, Field3 == 6
+
+(2)Prepending:
+HEAD == 5
+TAIL == 4
+COUNT == 5
+
+Field1 == 5, Field2 == 6, Field3 == 7
+Field1 == 0, Field2 == 1, Field3 == 2
+Field1 == 1, Field2 == 2, Field3 == 3
+Field1 == 2, Field2 == 3, Field3 == 4
+Field1 == 3, Field2 == 4, Field3 == 5
+Field1 == 4, Field2 == 5, Field3 == 6
+
+(3)Removing a value from the middle:
+HEAD == 5
+TAIL == 4
+COUNT == 4
+
+Field1 == 5, Field2 == 6, Field3 == 7
+Field1 == 0, Field2 == 1, Field3 == 2
+Field1 == 1, Field2 == 2, Field3 == 3
+Field1 == 2, Field2 == 3, Field3 == 4
+Field1 == 4, Field2 == 5, Field3 == 6
+
+(4)Removing the head:
+HEAD == 0
+TAIL == 4
+COUNT == 3
+
+Field1 == 0, Field2 == 1, Field3 == 2
+Field1 == 1, Field2 == 2, Field3 == 3
+Field1 == 2, Field2 == 3, Field3 == 4
+Field1 == 4, Field2 == 5, Field3 == 6
+
+(5)Removing the tail:
+HEAD == 0
+TAIL == 2
+COUNT == 2
+
+Field1 == 0, Field2 == 1, Field3 == 2
+Field1 == 1, Field2 == 2, Field3 == 3
+Field1 == 2, Field2 == 3, Field3 == 4
+
+(6)Reversing the list:
+HEAD == 2
+TAIL == 0
+COUNT == 2
+
+Field1 == 2, Field2 == 3, Field3 == 4
+Field1 == 1, Field2 == 2, Field3 == 3
+Field1 == 0, Field2 == 1, Field3 == 2
