@@ -41,4 +41,16 @@ field1 == 4, field2 == 5, field3 == 6
 Queue1 count == 5, capacity == 8, head == 5
 Queue2 count == 20, capacity == 20, head == 20
 
+(5) shrink to size, where new_size is greater than count but less than capacity:
+Queue1 count == 5, capacity == 8, head == 5
+Queue2 count == 20, capacity == 20, head == 20
+
+(6) shrink to size, where new_size is less than count but greater than head:
+Queue1 count == 5, capacity == 8, head == 5
+Queue2 count == 20, capacity == 20, head == 20
+
+(7) shrink to size, where new_size is less than head:
+Queue1 count == 5, capacity == 8, head == 5
+Queue2 count == 2, capacity == 2, head == 2
+
 Freeing the queues
