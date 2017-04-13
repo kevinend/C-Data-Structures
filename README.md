@@ -1,3 +1,3 @@
-# C-Data-Structures
+# Generic-C-Data-Structures
 
-Basic C data structures
+This repository contains sample generic containers/data structures implemented in plain old C.
