@@ -1,0 +1,25 @@
+Baseline count and capacity: 
+stack1 count == 0, capacity == 8
+stack2 count == 0, capacity == 10
+
+stack1 count == 10, capacity == 16
+stack2 count == 5, capacity == 10
+
+9 8 7 6 5 4 3 2 1 0 
+
+Field1 == 4, Field2 == 5, Field3 == 6
+Field1 == 3, Field2 == 4, Field3 == 5
+Field1 == 2, Field2 == 3, Field3 == 4
+Field1 == 1, Field2 == 2, Field3 == 3
+Field1 == 0, Field2 == 1, Field3 == 2
+
+stack1 count == 5, capacity == 16
+stack2 count == 10, capacity == 10
+
+Testing stack_clear: 
+stack1 count == 5, capacity == 16
+stack2 count == 0, capacity == 10
+
+Shrinking both stacks: 
+stack1 count == 5, capacity == 5
+stack2 count == 2, capacity == 2
