@@ -8,4 +8,4 @@ as well as have the user create the wrapper type before including s_linked_list.
 Also, you can only have one instance a list per compilation unit, otherwise symbols will clash
 and you will end up with linking issues.
 
-Those three drawbacks may be enough to justify not doing something similar like that in the future.
+Those three drawbacks may be enough to justify not doing something similar like that in the future, though it was fun to try.
