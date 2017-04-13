@@ -1,11 +1,12 @@
 valgrind --leak-check=yes ./queue-test:
 
-==10550== 
-==10550== HEAP SUMMARY:
-==10550==     in use at exit: 0 bytes in 0 blocks
-==10550==   total heap usage: 24 allocs, 24 frees, 1,536 bytes allocated
-==10550== 
-==10550== All heap blocks were freed -- no leaks are possible
-==10550== 
-==10550== For counts of detected and suppressed errors, rerun with: -v
-==10550== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==10617== 
+==10617== HEAP SUMMARY:
+==10617==     in use at exit: 0 bytes in 0 blocks
+==10617==   total heap usage: 25 allocs, 25 frees, 1,552 bytes allocated
+==10617== 
+==10617== All heap blocks were freed -- no leaks are possible
+==10617== 
+==10617== For counts of detected and suppressed errors, rerun with: -v
+==10617== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
