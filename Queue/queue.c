@@ -47,6 +47,9 @@ queue_overwrite_dequeued_elements( Queue *queue )
 
 	queued_element_size = (queue->data.count - queue->head) * queue->data.element_size;
 	memmove( dequeued_elements, queued_elements, queued_element_size );
+	
+	// BUG!!!! Didn't update head or tail to reflect the fact you moved these!
+	// PATCH to come
 
 	return;
 }
